@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        #main {
+            position: relative;
+            width: 100%;
+        }
+        .one {
+            display:none;
+            width: 100px;
+            height:100px;
+        }
+        .prev {
+            position: absolute;
+            left:10px;
+            float: left;
+            cursor: pointer;
+            top: 75%;
+            color:black;
+            background-color:rgba(227, 233, 238, 0.654);
+            font-size: 100px;
+            font-weight: bold;
+            padding:1px 19px;
+            border-radius: 50%;
+        }
+        .next {
+            position:absolute;
+            color: black;
+            background-color:rgba(227, 233, 238, 0.654);
+            float: right;
+            right:10px;
+            top: 75%;
+            font-size: 100px;
+            font-weight: bold;
+            padding:1px 19px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+
+        <div class="one">
+            <img src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg?w=2000"
+                alt="">
+        </div>
+
+        <div class="one">
+            <img src="https://blog.depositphotos.com/wp-content/uploads/2017/07/Soothing-nature-backgrounds-2-1024x684.jpg"
+                alt="">
+        </div>
+
+        <div class="one">
+            <img src="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/Zugpsitze_mountain.jpg?crop=0%2C214%2C3008%2C1579&wid=1200&hei=630&scl=2.506666666666667"
+                alt="">
+        </div>
+        <a class="prev" onclick="control(-1)">&#10094</a>
+        <a class="next" onclick="control(1)">&#10095</a>
+
+    </div>
+
+    <script src="bgslider.js"></script>
+</body>
+
+</html>
